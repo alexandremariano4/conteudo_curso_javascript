@@ -13,12 +13,15 @@
         }
     </style>
 </head>
+<h1>
+    Exercício 06
+</h1>
 <body>
     <script>
-        document.write(`<strong>Teste</strong>  aaa<br>`)
-        document.write(`<strong>Kappa</strong><br>`)
-        document.write(5==5,'<br>')
-        document.write(5==='5')
+        document.write(`Entre 5 numeral e 5 string os dois são iguais? ${5==5} 5==5 <br>`)
+        document.write(` Entre 5 numeral e 5 string os dois são iguais? ${5==='5'} 5==='5'<br>`)
+        media = window.prompt('Qual a média do aluno: ')
+        media >= 7.0 ? document.write(`Média <strong>${media}</strong>, aluno Aprovado!`):document.write(`Média <strong>${media}</strong>, aluno Reprovado!`)
     </script>
 </body>
 </html>
