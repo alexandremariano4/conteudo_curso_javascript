@@ -1,3 +1,5 @@
 Aula05 Exercício 07
+DOM = Document Object Model
+Modelo de documento com objeto
 Xpath child
 //body//child::div//child::p[text()="Aqui vai o resultado"]
