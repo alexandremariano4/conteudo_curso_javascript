@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        i#user{
+            color: black;
+        }
+        body{
+            text-align: center;
+            background: rgb(109, 111, 233);
+            color: rgb(0, 0, 0);
+            font: normal 15pt Arial;
+            margin-top: 5%;
+        }
+        h1#title{
+            color: white;
+        }
+        input.insert{
+            background: none;
+            border: none;
+            border-bottom: 1.5px solid black;
+            width: 5%;            
+        }
+        div#resultado{
+            margin-top: 20px;
+            color: white;
+            font: bold Arial;
+        }
+        input#verificar{
+            margin-top: 20px;
+            border-radius: 30px;
+            border-color: none;
+            border: none;            
+        }
+    </style>
+</head>
+<body>
+    <h1 id ="title"> <i class="glyphicon glyphicon-user" id="user"></i> Sistema de Multas</h1>
+    Velocidade do carro: <input class="insert" type="number" name="vel" id="txtvel" >Km/h <br>
+    <input id="verificar" type="button" value="Verificar" onclick="resultado()">
+    <div id="resultado"></div>
+
+
+    <script>
+        function resultado(){
+            let vel = document.querySelector('input#txtvel')
+            let res = document.querySelector('div#resultado')
+            if (Number(vel.value) > 60){
+                res.innerText = `Velocidade: ${vel.value}Km/h -  MULTADO!`
+            }
+            else{
+                res.innerText = `Velocidade: ${vel.value}Km/h - você não foi Multado!`
+            }
+        }
+    </script>
+</body>
+</html>
