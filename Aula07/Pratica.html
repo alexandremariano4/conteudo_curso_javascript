@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,50 @@
     <style>
         body{
             text-align: center;
-            background-image: url('fundo.jpg');
-            background-size:100%;
+            font: normal 15px Arial;
         }
-        h1.title{
-            color: white;
+        input{
+            margin-top: 10px;            
         }
-
 
     </style>
 </head>
 <body>
-    <h1 class="title">
-        Formulário
-    </h1>
-    <input type="text" name="nome" id="nome" value="Digite seu nome">
+    <form>
+
+    <h1 class="title">Formulário de Corno</h1>
+    <div class="input-icons">
+        <i class="fa fa-user icon"></i>   
+        <input 
+            class="input-field"
+            type="text" autocomplete="on" 
+            name="country" 
+            id="country" 
+            placeholder="Digite seu país">        
+    </div>
+    <div>
+        <input type="button" value="Validar" onclick="validar()">
+        <p></p>
+        
+        <div>
+            <iframe width="300" height="150" src="https://www.youtube.com/embed/tnLAcKTBLC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    </form>
+    <script>
+        function validar(){
+            let pais = document.querySelector('#country')
+            let res = document.querySelector('div>p')
+            res.innerHTML = `Você mora no <strong>${pais.value}</strong>`
+            if (pais.value == 'Brasil'){
+                    res.innerHTML += `<p>Você é corno</p>`
+                    res.innerHTML += `Se inscreva e deixe de ser corno, <a href="https://www.youtube.com/user/MrNandomoura101">seu corno</a>`
+                }
+            else{
+                    res.innerHTML += `<p>Você é estrangeiro</p>`
+                }
+        }
+
+    </script>
 </body>
 </html>
