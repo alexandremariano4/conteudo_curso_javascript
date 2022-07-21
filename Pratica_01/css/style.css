@@ -1,0 +1,59 @@
+body{
+    background: rgb(173, 161, 146);
+    font-family: Helvetica;
+}
+.topnav{
+    background-color: rgb(150, 108, 61);
+    overflow: hidden;
+    width: 100;
+}
+.topnav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font: 14px Arial;
+}
+.topnav a:hover{
+    background-color: rgb(95, 76, 54);
+    color:  rgb(253, 242, 204);
+}
+.topnav a.active{
+    background-color: rgb(41, 36, 31);
+    color: white;
+}
+.header{
+    padding: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.479);
+    color: black;
+    font: bold 30px Arial;
+}
+#content{
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 5px 5px 30px;
+    text-align: center;
+    
+}
+#box{
+    padding: 15px;
+}
+footer{
+    padding-top: 600px;
+}
+.footer{
+    background-color: rgb(150, 108, 61);
+    text-align: center;
+    font: bold 20px Arial;
+    padding: 50px;
+}
+.input{
+    padding: 0.5%;
+    border: none;
+    border-bottom: 1px solid black;
+}

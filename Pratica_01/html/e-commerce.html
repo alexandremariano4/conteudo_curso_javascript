@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Loja</title>
+</head>
+<body>
+    <header class="header">
+        Cabeçalho
+    </header>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">Novidades</a>
+        <a href="#contact">Contato</a>
+    </div>
+
+    <div id="box">
+        <section id="content">
+            <p> <label for="nome">Nome:</label> 
+                <input 
+                class="input" 
+                type="text" 
+                id="nome">
+            </p>
+            <p><label for="desc">Descrição:</label>
+                <input 
+                class="input" 
+                type="text" 
+                id="desc">
+            </p>
+            <p><label for="preco">Preço:</label>
+                <input 
+                class="input" 
+                type="number" 
+                id="preco"> 
+            </p>
+            <br>
+            <br>
+            <p><label id="imagem" for="preco">Imagem</label>
+                <br><input  
+                type="file" 
+                id="imagem"> 
+            </p>
+            <br>
+            <p><input type="button" value="Enviar" onclick="cadastrar()"></p>
+            <br>
+            <div class="content">
+                Teste
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer">
+            &copy; Rodapé
+        </div>
+    </footer>
+    <script src="../js/e-commerce.js"></script>
+</body>
+</html>
