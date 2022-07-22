@@ -16,7 +16,7 @@ body{
     font: 14px Arial;
 }
 .topnav a:hover{
-    background-color: rgb(95, 76, 54);
+    background-color: rgb(92, 54, 95);
     color:  rgb(253, 242, 204);
 }
 .topnav a.active{

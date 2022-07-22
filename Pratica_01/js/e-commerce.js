@@ -36,9 +36,13 @@ function cadastrar(){
         imagem.setAttribute('id','imagem')
         if (genero == 'Masculino'){
             imagem.setAttribute('src','../images/naruto.gif')
+            let body = document.querySelector('.body')
+            body.style.background = 'rgb(124, 206, 221)'
         }
         else{
             imagem.setAttribute('src','../images/nezuko.gif')
+            let body = document.querySelector('.body')
+            body.style.background = 'rgb(235, 145, 243)'
         }
         imagem.setAttribute('width','300px')
         imagem.style.boxShadow = '5px 5px 20px'
