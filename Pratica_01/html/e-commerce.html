@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Loja</title>
 </head>
-<body>
+<body onload="hide()">
     <header class="header">
-        Cabeçalho
+        Formulário
     </header>
     <div class="topnav">
         <a class="active" href="#home">Home</a>
@@ -18,40 +18,56 @@
     </div>
 
     <div id="box">
-        <section id="content">
-            <p> <label for="nome">Nome:</label> 
+        <section class="content">
+            <form class="form">
+            <p> <label for="nome"></label> 
                 <input 
+                placeholder="Nome"
                 class="input" 
                 type="text" 
+                autocomplete="on"
                 id="nome">
             </p>
-            <p><label for="desc">Descrição:</label>
+            <p><label for="desc"></label>
                 <input 
+                placeholder="Sobrenome"
                 class="input" 
                 type="text" 
-                id="desc">
+                autocomplete="on"
+                id="sobrenome">
             </p>
-            <p><label for="preco">Preço:</label>
+            <p><label for="desc"></label>
                 <input 
+                placeholder="Endereço"
                 class="input" 
-                type="number" 
-                id="preco"> 
+                type="text" 
+                autocomplete="on"
+                id="endereco">
             </p>
-            <br>
-            <br>
-            <p><label id="imagem" for="preco">Imagem</label>
-                <br><input  
-                type="file" 
-                id="imagem"> 
+            <p><label for="desc"></label>
+                <input 
+                placeholder="Email"
+                class="input" 
+                autocomplete="on"
+                type="text" 
+                id="email">
             </p>
-            <br>
-            <p><input type="button" value="Enviar" onclick="cadastrar()"></p>
-            <br>
-            <div class="content">
-                Teste
-            </div>
+            <p id="sexo">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radiosex" id="masc" checked>
+                <label for="fem">Feminino</label>
+                <input type="radio" name="radiosex" id="fem">
+                </p>
+            <p>
+                <input type="button" value="Cadastrar" onclick="cadastrar()">
+            </p>
+            </form>
+            <img src="" alt="">
         </section>
     </div>
+        <section class="content" id="res">
+            
+        </section>
 
     <footer>
         <div class="footer">

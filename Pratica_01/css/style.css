@@ -30,15 +30,14 @@ body{
     color: black;
     font: bold 30px Arial;
 }
-#content{
+.content{
     background: white;
     border-radius: 10px;
     padding: 10px;
     width: 90%;
     margin: auto;
     box-shadow: 5px 5px 30px;
-    text-align: center;
-    
+    text-align: center; 
 }
 #box{
     padding: 15px;
@@ -56,4 +55,8 @@ footer{
     padding: 0.5%;
     border: none;
     border-bottom: 1px solid black;
+    
+}
+#sexo{
+    padding: 20px;
 }
